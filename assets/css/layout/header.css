@@ -23,12 +23,12 @@ header{
 }
 
 header .logo{
-    font-size: 2rem;
-    color:var(--purple);
+    font-size: 2rem!important;
+    color:var(--purple)!important;
 }
 
 header .logo span{
-    color:var(--pink);
+    color:var(--pink)!important;
 }
 
 header .navbar a{
@@ -42,20 +42,20 @@ header .navbar a{
 }
 
 header .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: var(--purple);
-    background-color: var(--pink);
-    border-radius: 50px;
+    color: var(--purple)!important;
+    background-color: var(--pink)!important;
+    border-radius: 50px!important;
 }
 
 header .nav-pills .nav-link.active, .nav-pills .show>.nav-link:active {
-    color: var(--purple);
+    color: var(--purple)!important;
 }
 
 
 
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .show>.nav-link:active {
-    color: var(--purple);
+    color: var(--purple)!important;
 }
 
 header .navbar a:hover{
