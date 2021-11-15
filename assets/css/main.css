@@ -1,2 +1,30 @@
-@import 'vendors/sass/aos.scss';
-@import 'style.css';
+/* Main Css */
+
+/* Vendors */
+@import './vendors/bootstrap_v5.0.2/css/bootstrap.min.css';
+@import './vendors/aos/sass/aos.scss';
+
+/* base */
+@import './base/reset.css';
+@import './base/root.css';
+@import './base/typography.css';
+
+/* layout */
+@import './layout/header.css';
+@import './layout/scrollbar.css';
+@import './layout/section.css';
+
+/* Component */
+@import './components/button.css';
+
+/* Pages */
+@import './pages/home.css';
+@import './pages/about.css';
+@import './pages/contact.css';
+@import './pages/features.css';
+@import './pages/newsletter.css';
+@import './pages/pricing.css';
+@import './pages/review.css';
+@import './pages/footer.css';
+
+/* Utilis */

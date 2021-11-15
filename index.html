@@ -5,40 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>complete responsive app landing page website design tutorial</title>
 
-    <!-- font awesome cdn link  -->
+    <!-- Font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="assets/css/main.css">
-
+    <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="shortcut icon" type="image/jpg" href="./assets/image/favicon.png"/>
+    <!-- Animate css cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/image/favicon.ico"/>
+
 </head>
-<body>
-        
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="my-5 scrollspy-example" tabindex="0">
+   
     <!-- header section starts  -->
     <header>
 
-        <a href="#" class="logo"><span>best</span>App</a>
+        <!-- <a href="#" class="logo animate__animated animate__bounce">
+            <span>
+                best
+            </span>
+            App
+        </a>
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar" class="fas fa-bars"></label>
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#features">features</a>
-            <a href="#about">about</a>
-            <a href="#review">review</a>
-            <a href="#pricing">pricing</a>
-            <a href="#contact">contact</a>
+        <nav class="navbar animate__animated animate__bounce">
+            <ul>
+                <li>
+                    <a class="nav-link scrollto active" href="#home">
+                        home
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link scrollto" href="#features">
+                        features
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link scrollto" href="#about">
+                        about
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link scrollto" href="#review">
+                        review
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link scrollto" href="#pricing">
+                        pricing
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link scrollto" href="#contact">
+                        contact
+                    </a>
+                </li>
+            </ul>
+            
+        </nav> -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow bg-light" id="navbar">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">
+                    Best <span>App</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav nav-pills flex-row flex-wrap pt-2 py-md-0 ms-lg-auto ">
+                    <!-- Home Navbar -->
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link active" aria-current="page" href="#">
+                            Home
+                            </a>
+                        </li>
+                        <!-- Menu Navbar -->
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="#features">
+                            Features
+                            </a>
+                        </li>
+                        <!-- About Us Navbar -->
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="#about">
+                            About
+                            </a>
+                        </li>
+                        <!-- Review Navbar -->
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="#review">
+                            Review
+                            </a>
+                        </li>
+                        <!-- Pricing Navbar -->
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="#pricing">
+                            Pricing
+                            </a>
+                        </li>
+                        <!-- Contact Navbar -->
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link" href="#contact">
+                            Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
     <!-- header section ends -->
 
     <!-- home section starts  -->
-    <section class="home" id="home">
+    <section class="home animate__animated animate__fadeInDown animate__delay-0.5s" id="home">
 
         <div class="content">
             <h3>best mobile app <span>showcase</span></h3>
@@ -47,38 +137,69 @@
         </div>
 
         <div class="image">
-            <img src="assets/image/home-img.png" alt="">
+            <img src="assets/image/about-img.png" alt="">
         </div>
         
     </section>
     <!-- home section ends -->
 
     <!-- features section starts  -->
-    <section class="features" id="features" >
+    <section class="features " id="features"  >
         
-        <h1 class="heading"> app features </h1>
+        <h1 class="heading animate__animated animate__backInDown animate__delay-1s"> 
+            app features 
+        </h1>
 
-        <div class="box-container">
+        <div class="box-container aos-init" data-aos="fade-down">
 
-            <div class="box">
-                <img src="assets/image/f-icon1.png" alt="">
-                <h3>amazing UI design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-                <a href="#" class="btn">read more</a>
+            <div class="box aos-init" data-aos="fade-right">
+                <img src="assets/image/f-icon1.png" class="aos-init" data-aos="fade-right" alt="">
+                <h3 class="aos-init" data-aos="fade-right">
+                    amazing UI design
+                </h3>
+                <p class="aos-init" data-aos="fade-right">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ullam minus recusandae autem, repellendus fugit quaerat provident
+                    voluptatum non officiis ratione.
+                </p>
+                <a href="#" class="btn aos-init" data-aos="fade-right">
+                    <span class="aos-init" data-aos="fade-right">
+                        read more
+                    </span>
+                </a>
             </div>
 
-            <div class="box">
-                <img src="assets/image/f-icon2.png" alt="">
-                <h3>soft and smooth animations</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-                <a href="#" class="btn">read more</a>
+            <div class="box aos-init" data-aos="fade-right" data-aos-duration="1000">
+                <img src="assets/image/f-icon2.png" class="aos-init" data-aos="fade-right" alt="">
+                <h3 class="aos-init" data-aos="fade-right">
+                    soft and smooth animations
+                </h3>
+                <p class="aos-init" data-aos="fade-right">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Ullam minus recusandae autem, repellendus fugit quaerat provident 
+                    voluptatum non officiis ratione.
+                </p>
+                <a href="#" class="btn aos-init" data-aos="fade-right">
+                    <span class="aos-init" data-aos="fade-right">
+                        read more
+                    </span>
+                </a>
             </div>
 
-            <div class="box">
-                <img src="assets/image/f-icon3.png" alt="">
-                <h3>freindly interactions</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-                <a href="#" class="btn">read more</a>
+            <div class="box aos-init" data-aos="fade-right" data-aos-duration="1500">
+                <img src="assets/image/f-icon3.png" class="aos-init" data-aos="fade-right" alt="">
+                <h3 class="aos-init" data-aos="fade-right">
+                    freindly interactions
+                </h3>
+                <p class="aos-init" data-aos="fade-right">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ullam minus recusandae autem, repellendus fugit quaerat provident
+                    voluptatum non officiis ratione.</p>
+                <a href="#" class="btn aos-init" data-aos="fade-right">
+                    <span class="aos-init" data-aos="fade-right">
+                        read more
+                    </span>
+                </a>
             </div>
 
         </div>
@@ -89,21 +210,44 @@
     <!-- about section starts  -->
     <section class="about" id="about">
 
-        <h1 class="heading"> about the app </h1>
+        <h1 class="heading aos-init" data-aos="zoom-in"> 
+            about the app 
+        </h1>
 
-        <div class="column">
+        <div class="column aos-init" data-aos="fade-up">
 
-            <div class="image">
-                <img src="assets/image/about-img.png" alt="">
+            <div class="image aos-init" data-aos="fade-right">
+                <img src="assets/image/about-img.png" class="aos-init" data-aos="fade-right" alt="">
             </div>
 
-            <div class="content">
-                <h3>Easy And Perfect Solution For Your Business App</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
-                <div class="buttons">
-                    <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
-                    <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+            <div class="content aos-init" data-aos="fade-right">
+                <h3 class="aos-init" data-aos="fade-right">
+                    Easy And Perfect Solution For Your Business App
+                </h3>
+                <p class="aos-init" data-aos="fade-right">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nulla placeat deserunt saepe repudiandae veniam soluta 
+                    minima dolor hic aperiam iure.
+                </p>
+                <p class="aos-init" data-aos="fade-right">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Laudantium, quaerat. Dolorem ratione saepe magni quo 
+                    inventore porro ab voluptates eos, nam eius provident 
+                    accusantium, quia similique est, repellendus et reiciendis.
+                </p>
+                <div class="buttons aos-init" data-aos="fade-right">
+                    <a href="#" class="btn aos-init" data-aos="fade-right"> 
+                        <i class="fab fa-apple aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            app store 
+                        </span>
+                    </a>
+                    <a href="#" class="btn aos-init" data-aos="fade-right"> 
+                        <i class="fab fa-google-play aos-init" data-aos="fade-right"></i>
+                        <span class="aos-init" data-aos="fade-right">
+                            google-play
+                        </span> 
+                    </a>
                 </div>
             </div>
 
@@ -116,11 +260,11 @@
     <section id="newsletter">
         <div class="newsletter">
 
-            <h3>Subscribe For New Features</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed aliquam quibusdam neque magni magnam est laborum doloribus, facere dolores.</p>
-            <form action="">
-                <input type="email" placeholder="enter your email">
-                <input type="submit" value="Subscribe">
+            <h3 class="aos-init" data-aos="zoom-in">Subscribe For New Features</h3>
+            <p class="aos-init" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed aliquam quibusdam neque magni magnam est laborum doloribus, facere dolores.</p>
+            <form action="" class="aos-init" data-aos="fade-right">
+                <input class="aos-init" data-aos="fade-right" type="email" placeholder="enter your email">
+                <input class="aos-init" data-aos="fade-right" type="submit" value="Subscribe">
             </form>
 
         </div>
@@ -129,59 +273,67 @@
     <!-- review section starts  -->
     <section class="review" id="review">
 
-        <h1 class="heading"> people's review </h1>
+        <h1 class="heading aos-init" data-aos="zoom-in"> 
+            people's review 
+        </h1>
 
-        <div class="box-container">
+        <div class="box-container aos-init" data-aos="fade-right">
 
-            <div class="box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="assets/image/pic1.png" alt="">
-                    <h3>john deo</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="box aos-init" data-aos="fade-right">
+                <i class="fas fa-quote-right aos-init" data-aos="fade-right"></i>
+                <div class="user aos-init" data-aos="fade-right">
+                    <img src="assets/image/pic1.png" class="aos-init" data-aos="fade-right" alt="">
+                    <h3 class="aos-init" data-aos="fade-right">
+                        john deo
+                    </h3>
+                    <div class="stars aos-init" data-aos="fade-right">
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
                     </div>
-                    <div class="comment">
+                    <div class="comment aos-init" data-aos="fade-right">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
                     </div>
                 </div>
             </div>
 
-            <div class="box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="assets/image/pic2.png" alt="">
-                    <h3>john deo</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+            <div class="box aos-init" data-aos="fade-right" data-aos-duration="1000">
+                <i class="fas fa-quote-right aos-init" data-aos="fade-right"></i>
+                <div class="user aos-init" data-aos="fade-right">
+                    <img src="assets/image/pic2.png" class="aos-init" data-aos="fade-right" alt="">
+                    <h3 class="aos-init" data-aos="fade-right">
+                        john deo
+                    </h3>
+                    <div class="stars aos-init" data-aos="fade-right">
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star-half-alt aos-init" data-aos="fade-right"></i>
                     </div>
-                    <div class="comment">
+                    <div class="comment aos-init" data-aos="fade-right">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
                     </div>
                 </div>
             </div>
 
-            <div class="box">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="assets/image/pic3.png" alt="">
-                    <h3>john deo</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+            <div class="box aos-init" data-aos="fade-right" data-aos-duration="1500">
+                <i class="fas fa-quote-right aos-init" data-aos="fade-right"></i>
+                <div class="user aos-init" data-aos="fade-right">
+                    <img src="assets/image/pic3.png" class="aos-init" data-aos="fade-right" alt="">
+                    <h3 class="aos-init" data-aos="fade-right">
+                        john deo
+                    </h3>
+                    <div class="stars aos-init" data-aos="fade-right">
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="fas fa-star aos-init" data-aos="fade-right"></i>
+                        <i class="far fa-star aos-init" data-aos="fade-right"></i>
                     </div>
-                    <div class="comment">
+                    <div class="comment aos-init" data-aos="fade-right">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
                     </div>
                 </div>
@@ -195,44 +347,130 @@
     <!-- pricing section starts  -->
     <section class="pricing" id="pricing">
 
-        <h1 class="heading"> Our Pricing Plans </h1>
+        <h1 class="heading aos-init" data-aos="zoom-in"> 
+            Our Pricing Plans 
+        </h1>
 
-        <div class="box-container">
+        <div class="box-container aos-init" data-aos="fade-right">
 
-            <div class="box">
-                <h3 class="title">basic</h3>
-                <div class="price">$10<span>/monthly</span></div>
-                <ul>
-                    <li> <i class="fas fa-check"></i> 1000+ downloads </li>
-                    <li> <i class="fas fa-check"></i> No transaction fees </li>
-                    <li> <i class="fas fa-times"></i> unlimited storage </li>
-                    <li> <i class="fas fa-times"></i> 5 downloads </li>
+            <div class="box aos-init" data-aos="fade-right">
+                <h3 class="title aos-init" data-aos="fade-right">
+                    basic
+                </h3>
+                <div class="price aos-init" data-aos="fade-right">
+                    $10<span class="aos-init" data-aos="fade-right">/monthly</span>
+                </div>
+                <ul class="aos-init" data-aos="fade-right">
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-check aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            1000+ downloads
+                        </span> 
+                    </li>
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-check aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            No transaction fees
+                        </span>
+                    </li>
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-times aos-init" data-aos="fade-right"></i>
+                        <span class="aos-init" data-aos="fade-right">
+                            unlimited storage
+                        </span>  
+                    </li>
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-times aos-init " data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            5 downloads 
+                        </span> 
+                    </li>
                 </ul>
-                <a href="#" class="btn">check out</a>
+                <a href="#" class="btn aos-init" data-aos="fade-right">
+                    <span class="aos-init" data-aos="fade-right">
+                        check out
+                    </span>
+                </a>
             </div>
 
-            <div class="box">
-                <h3 class="title">standard</h3>
-                <div class="price">$15<span>/monthly</span></div>
+            <div class="box aos-init" data-aos="fade-right" data-aos-duration="1000">
+                <h3 class="title aos-init" data-aos="fade-right">
+                    standard
+                </h3>
+                <div class="price aos-init" data-aos="fade-right">
+                    $15<span class="aos-init" data-aos="fade-right">
+                        /monthly
+                    </span>
+                </div>
                 <ul>
-                    <li> <i class="fas fa-check"></i> 1000+ downloads </li>
-                    <li> <i class="fas fa-check"></i> No transaction fees </li>
-                    <li> <i class="fas fa-check"></i> unlimited storage </li>
-                    <li> <i class="fas fa-times"></i> 5 downloads </li>
+                    <li>
+                        <i class="fas fa-check aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            1000+ downloads 
+                        </span>
+                    </li>
+                    <li> 
+                        <i class="fas fa-check aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            No transaction fees
+                        </span>
+                    </li>
+                    <li> 
+                        <i class="fas fa-check aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            unlimited storage
+                        </span> 
+                    </li>
+                    <li> 
+                        <i class="fas fa-times aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            5 downloads 
+                        </span> 
+                    </li>
                 </ul>
-                <a href="#" class="btn">check out</a>
+                <a href="#" class="btn aos-init" data-aos="fade-right">
+                    check out
+                </a>
             </div>
 
-            <div class="box">
-                <h3 class="title">premium</h3>
-                <div class="price">$25<span>/monthly</span></div>
-                <ul>
-                    <li> <i class="fas fa-check"></i> 1000+ downloads </li>
-                    <li> <i class="fas fa-check"></i> No transaction fees </li>
-                    <li> <i class="fas fa-check"></i> unlimited storage </li>
-                    <li> <i class="fas fa-check"></i> 5 downloads </li>
+            <div class="box aos-init" data-aos="fade-right" data-aos-duration="1500">
+                <h3 class="title aos-init" data-aos="fade-right">
+                    premium
+                </h3>
+                <div class="price aos-init" data-aos="fade-right">
+                    $25<span class="aos-init" data-aos="fade-right">
+                        /monthly
+                    </span>
+                </div>
+                <ul class="aos-init" data-aos="fade-right">
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-check aos-init" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            1000+ downloads
+                        </span> 
+                    </li>
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-check" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            No transaction fees 
+                        </span>
+                    </li>
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-check" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            unlimited storage
+                        </span>
+                    </li>
+                    <li class="aos-init" data-aos="fade-right"> 
+                        <i class="fas fa-check" data-aos="fade-right"></i> 
+                        <span class="aos-init" data-aos="fade-right">
+                            5 downloads 
+                        </span>
+                    </li>
                 </ul>
-                <a href="#" class="btn">check out</a>
+                <a href="#" class="btn" data-aos="fade-right">
+                    check out
+                </a>
             </div>
 
         </div>
@@ -243,35 +481,41 @@
     <!-- contact section starts  -->
     <section class="contact" id="contact">
 
-        <div class="image">
-            <img src="assets/image/about-img.png" alt="">
+        <div class="image aos-init" data-aos="fade-up">
+            <img src="assets/image/about-img.png" class="aos-init" data-aos="fade-right" alt="">
         </div>
 
-        <form action="">
+        <form action="" class="aos-init" data-aos="fade-up" data-aos-duration="1000">
 
-            <h1 class="heading">contact us</h1>
+            <h1 class="heading aos-init" data-aos="fade-right">
+                contact us
+            </h1>
 
-            <div class="inputBox">
-                <input type="text" required>
+            <div class="inputBox aos-init" data-aos="fade-right">
+                <input type="text" class="aos-init" data-aos="fade-right" required>
                 <label>name</label>
             </div>
 
-            <div class="inputBox">
-                <input type="email" required>
+            <div class="inputBox aos-init" data-aos="fade-right">
+                <input type="email" class="aos-init" data-aos="fade-right" required>
                 <label>email</label>
             </div>
 
-            <div class="inputBox">
-                <input type="number" required>
+            <div class="inputBox aos-init" data-aos="fade-right">
+                <input type="number" class="aos-init" data-aos="fade-right" required>
                 <label>phone</label>
             </div>
 
-            <div class="inputBox">
-                <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <div class="inputBox aos-init" data-aos="fade-right">
+                <textarea class="aos-init" data-aos="fade-right" required name="" id="" cols="30" rows="10"></textarea>
                 <label>message</label>
             </div>
 
-            <input type="submit" class="btn" value="send message">
+            <button type="submit" class="btn aos-init" data-aos="fade-right">
+                <span class="aos-init" data-aos="fade-right">
+                    send message
+                </span>
+            </button>
 
         </form>
 
@@ -284,60 +528,77 @@
 
             <div class="box-container">
 
-                <div class="box">
-                    <h3>about us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
+                <!-- About Us Footer -->
+                <div class="box aos-init" data-aos="fade-up">
+                    <h3 class="aos-init" data-aos="fade-right">about us</h3>
+                    <p class="aos-init" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
                 </div>
 
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#home">home</a>
-                    <a href="#features">features</a>
-                    <a href="#about">about</a>
-                    <a href="#review">review</a>
-                    <a href="#pricing">pricing</a>
-                    <a href="#contact">contact</a>
+                <!-- Quick Links Footer -->
+                <div class="box aos-init" data-aos="fade-up">
+                    <h3 class="aos-init" data-aos="fade-right">quick links</h3>
+                    <a class="aos-init" data-aos="fade-right" href="#home">home</a>
+                    <a class="aos-init" data-aos="fade-right" href="#features">features</a>
+                    <a class="aos-init" data-aos="fade-right" href="#about">about</a>
+                    <a class="aos-init" data-aos="fade-right" href="#review">review</a>
+                    <a class="aos-init" data-aos="fade-right" href="#pricing">pricing</a>
+                    <a class="aos-init" data-aos="fade-right" href="#contact">contact</a>
                 </div>
 
-                <div class="box">
-                    <h3>follow us</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">instagram</a>
-                    <a href="#">pinterest</a>
-                    <a href="#">twitter</a>
+                <!-- Follow Us Footer -->
+                <div class="box aos-init" data-aos="fade-up">
+                    <h3 class="aos-init" data-aos="fade-right">follow us</h3>
+                    <a class="aos-init" data-aos="fade-right" href="#">facebook</a>
+                    <a class="aos-init" data-aos="fade-right" href="#">instagram</a>
+                    <a class="aos-init" data-aos="fade-right" href="#">pinterest</a>
+                    <a class="aos-init" data-aos="fade-right" href="#">twitter</a>
                 </div>
 
-                <div class="box">
+                <!-- Contact Info Footer -->
+                <div class="box aos-init" data-aos="fade-up">
                     <h3>contact info</h3>
-                    <div class="info">
-                        <i class="fas fa-phone"></i>
-                        <p> <a href="#">+123-456-7890</a>
-                            <a href="#">+111-2222-333 </a>
+                    <div class="info aos-init" data-aos="fade-right">
+                        <i class="fas fa-phone aos-init" data-aos="fade-right"></i>
+                        <p class="aos-init"> 
+                            <a class="aos-init" data-aos="fade-right" href="#">+123-456-7890</a>
+                            <a class="aos-init" data-aos="fade-right" href="#">+111-2222-333 </a>
                         </p>
                     </div>
-                    <div class="info">
-                        <i class="fas fa-envelope"></i>
-                        <p> 
-                            <a href="#">example@gmail.com</a>
-                            <a href="#">example@gmail.com</a>
+                    <div class="info aos-it" data-aos="fade-right">
+                        <i class="fas fa-envelope aos-it" data-aos="fade-right"></i>
+                        <p class="aos-init" data-aos="fade-right"> 
+                            <a class="aos-init" data-aos="fade-right" href="#">example@gmail.com</a>
+                            <a class="aos-init" data-aos="fade-right" href="#">example@gmail.com</a>
                         </p>
                     </div>
-                    <div class="info">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p> Remote, Earth </p>
+                    <div class="info aos-it" data-aos="fade-right">
+                        <i class="fas fa-map-marker-alt aos-it" data-aos="fade-right"></i>
+                        <p class="aos-init" data-aos="fade-right">Remote, Earth </p>
                     </div>
                 </div>
 
             </div>
 
-            <h1 class="credit"> &copy; copyright @ 2021 by <a href="https://biadedigital.com">Biade Digital</a> </h1>
+            <!-- Credit -->
+            <h1 class="credit animate__animated animate__fadeInDown animate__delay-0.5s"> 
+                &copy; copyright @ 2021 by 
+                <a href="https://biadedigital.com">
+                    Biade Digital
+                </a> 
+            </h1>
 
         </div>
     </section>
     <!-- footer section ends -->
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
     <script src="assets/js/main.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

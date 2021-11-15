@@ -1,0 +1,95 @@
+.heading{
+    text-align: center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color:var(--purple);
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color:var(--purple)!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--purple)!important;
+}
+
+header .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--purple);
+    background-color: var(--pink);
+    border-radius: 50px;
+}
+
+header .nav-pills .nav-link.active, .nav-pills .show>.nav-link:active {
+    color: var(--purple);
+}
+
+
+
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link:active {
+    color: var(--purple);
+}
+
+header .navbar a:hover{
+    color:var(--pink)!important;
+}
+
+header .navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .navbar li{
+    position: relative;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+@media (max-width:768px) {
+    .navbar-light .navbar-nav .nav-link.active, 
+    .navbar-light .navbar-nav .show>.nav-link {
+        padding-left: 10px;
+    } 
+}
