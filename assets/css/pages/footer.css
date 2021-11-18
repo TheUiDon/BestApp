@@ -72,3 +72,11 @@ footer a:hover {
     padding:2.5rem 1rem;
     text-align: center;
 }
+
+.footer .credit a{
+    color: #F83292;
+}
+
+.footer .credit a:hover{
+    color: #814096;
+}
